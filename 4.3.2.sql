@@ -1,12 +1,12 @@
 --------------------------------------------------------
---  File created - Friday-November-15-2019   
+--  File created - Wednesday-November-20-2019   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Procedure FIND_STUDENT_NAME
 --------------------------------------------------------
 set define off;
 
-  CREATE OR REPLACE EDITIONABLE PROCEDURE "RUNSYSTEM"."FIND_STUDENT_NAME" (i_s_id       IN student.id%TYPE, 
+  CREATE OR REPLACE EDITIONABLE PROCEDURE "RUNSYSTEM"."FIND_STUDENT_NAME" (i_student_id       IN student.id%TYPE, 
                                               o_first_name OUT 
 student.first_name%TYPE, 
                                               o_last_name  OUT 
@@ -17,7 +17,7 @@ BEGIN
            last_name 
     INTO   o_first_name, o_last_name 
     FROM   student 
-    WHERE  i_s_id = id; 
+    WHERE  i_student_id = id; 
 
     dbms_output.Put_line('First Name: ' 
                          || o_first_name 

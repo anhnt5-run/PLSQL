@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - Monday-November-18-2019   
+--  File created - Wednesday-November-20-2019   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Procedure EX_COUNT_STUDENT
@@ -11,7 +11,7 @@ AS
   students NUMBER; 
   ex EXCEPTION; 
 BEGIN 
-    SELECT Count(*) 
+    SELECT COUNT(*) 
     INTO   students 
     FROM   student; 
 

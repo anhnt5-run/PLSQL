@@ -1,5 +1,5 @@
 --------------------------------------------------------
---  File created - Monday-November-18-2019   
+--  File created - Wednesday-November-20-2019   
 --------------------------------------------------------
 --------------------------------------------------------
 --  DDL for Procedure EX_MIN_SCORE
@@ -11,7 +11,7 @@ AS
   min_score NUMBER; 
   ex EXCEPTION; 
 BEGIN 
-    SELECT Min(score) 
+    SELECT MIN(score) 
     INTO   min_score 
     FROM   score; 
 
